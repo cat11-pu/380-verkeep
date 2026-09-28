@@ -1,0 +1,15 @@
+{
+  "budget": 2,
+  "top": 3,
+  "bad_frame_code": "E_BAD_FRAME",
+  "bad_version_code": "E_BAD_VERSION",
+  "bad_reserved_code": "E_BAD_RESERVED",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "records": [], "counts": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "frame", "hex": "20" },
+    { "id": 2, "kind": "frame", "hex": "10" },
+    { "id": 3, "kind": "frame", "hex": "10" },
+    { "id": 4, "kind": "frame", "hex": "30" }
+  ]
+}
