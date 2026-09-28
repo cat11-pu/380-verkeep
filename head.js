@@ -1,8 +1,10 @@
-// head.js：版本与保留位（基线：一律给负一）
+// head.js：报文头按位解析（形状不合法一律给负一）
 export function versionOf(hex) {
-  return -1;
+  if (typeof hex !== "string" || !/^[0-9a-fA-F]{2}$/.test(hex)) return -1;
+  return parseInt(hex.charAt(0), 16);
 }
 
 export function reservedOf(hex) {
-  return -1;
+  if (typeof hex !== "string" || !/^[0-9a-fA-F]{2}$/.test(hex)) return -1;
+  return parseInt(hex.charAt(1), 16);
 }
